@@ -33,5 +33,14 @@ public class Main {
         //2. CREATE A SHORT VARIABLE AND SET IT TO ANY VALID SHORT NUMBER
         //3. CREATE AN INT VARIABLE AND SET IT TO ANY VALID INT NUMBER
         //4. CREATE A LONG VARIABLE AND SET IT EQUAL TO 50000 + 10(BYTEVALUE + SHORTVALUE + INTVALUE)
+
+        byte byteValue = 5;
+        short shortValue = 10;
+        int intValue = 30;
+
+        long totalValue = 50_000L + 10L * (byteValue + shortValue + intValue);
+        short shortTotal = (short) (1000 + 10 * (byteValue + shortValue + intValue));
+        System.out.println(totalValue);
+        System.out.println(shortTotal);
     }
 }
